@@ -1,0 +1,11 @@
+C:\Project 2016\MySampleCrystalReport\MySampleCrystalReport\bin\Debug\MySampleCrystalReport.exe.config
+C:\Project 2016\MySampleCrystalReport\MySampleCrystalReport\obj\x86\Debug\MySampleCrystalReport.csprojResolveAssemblyReference.cache
+C:\Project 2016\MySampleCrystalReport\MySampleCrystalReport\obj\x86\Debug\MySampleCrystalReport.FrmCrystalReport.resources
+C:\Project 2016\MySampleCrystalReport\MySampleCrystalReport\obj\x86\Debug\MySampleCrystalReport.Properties.Resources.resources
+C:\Project 2016\MySampleCrystalReport\MySampleCrystalReport\obj\x86\Debug\MySampleCrystalReport.csproj.GenerateResource.Cache
+C:\Project 2016\MySampleCrystalReport\MySampleCrystalReport\bin\Debug\cooperative.accdb
+C:\Project 2016\MySampleCrystalReport\MySampleCrystalReport\bin\Debug\MySampleCrystalReport.exe
+C:\Project 2016\MySampleCrystalReport\MySampleCrystalReport\bin\Debug\MySampleCrystalReport.pdb
+C:\Project 2016\MySampleCrystalReport\MySampleCrystalReport\obj\x86\Debug\MySampleCrystalReport.exe
+C:\Project 2016\MySampleCrystalReport\MySampleCrystalReport\obj\x86\Debug\MySampleCrystalReport.pdb
+C:\Project 2016\MySampleCrystalReport\MySampleCrystalReport\bin\Debug\crdb_adoplus.dll

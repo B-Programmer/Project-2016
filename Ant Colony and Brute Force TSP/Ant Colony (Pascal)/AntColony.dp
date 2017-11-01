@@ -1,0 +1,15 @@
+[Project]
+FileName=C:\Project 2016\Ant Colony and Brute Force TSP\Ant Colony (Pascal)\AntColony.dp
+Name=AntColony
+MainUnit=C:\Project 2016\Ant Colony and Brute Force TSP\Ant Colony (Pascal)\AntColony_TSP.pas
+UnitCount=1
+ResFiles=C:\Project 2016\Ant Colony and Brute Force TSP\Ant Colony (Pascal)\rsrc.rc
+NoConsole=0
+IsDll=0
+Icon=C:\Dev-Pas\Icons\Console.ico
+CompilerOptions=
+IncludeDirs=
+ObjFile=
+[Unit1]
+FileName=C:\Project 2016\Ant Colony and Brute Force TSP\Ant Colony (Pascal)\AntColony_TSP.pas
+FileTime=1230923325

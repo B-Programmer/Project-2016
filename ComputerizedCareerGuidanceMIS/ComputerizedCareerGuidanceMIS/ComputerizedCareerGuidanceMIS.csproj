@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{89A6F7A4-DC7C-48D4-A3EB-65CF5FDEEF89}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ComputerizedCareerGuidanceMIS</RootNamespace>
+    <AssemblyName>ComputerizedCareerGuidanceMIS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutApp.Designer.cs">
+      <DependentUpon>AboutApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CareerDbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CareerDbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CareerDbDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CareerDbDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAboutCareer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAboutCareer.Designer.cs">
+      <DependentUpon>FrmAboutCareer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCareerAsk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCareerAsk.Designer.cs">
+      <DependentUpon>FrmCareerAsk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCareerCounseling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCareerCounseling.Designer.cs">
+      <DependentUpon>FrmCareerCounseling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCareerCounselingRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCareerCounselingRoom.Designer.cs">
+      <DependentUpon>FrmCareerCounselingRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCareerResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCareerResult.Designer.cs">
+      <DependentUpon>FrmCareerResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmComments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmComments.Designer.cs">
+      <DependentUpon>FrmComments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExamination1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExamination1.Designer.cs">
+      <DependentUpon>FrmExamination1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSplash.Designer.cs">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStudentDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStudentDetails.Designer.cs">
+      <DependentUpon>FrmStudentDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserType.Designer.cs">
+      <DependentUpon>FrmUserType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmViewAllStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmViewAllStudents.Designer.cs">
+      <DependentUpon>FrmViewAllStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmViewAllUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmViewAllUsers.Designer.cs">
+      <DependentUpon>FrmViewAllUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmViewParentsComments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmViewParentsComments.Designer.cs">
+      <DependentUpon>FrmViewParentsComments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmViewUserLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmViewUserLog.Designer.cs">
+      <DependentUpon>FrmViewUserLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDICareer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDICareer.Designer.cs">
+      <DependentUpon>MDICareer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student.cs" />
+    <EmbeddedResource Include="AboutApp.resx">
+      <DependentUpon>AboutApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAboutCareer.resx">
+      <DependentUpon>FrmAboutCareer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCareerAsk.resx">
+      <DependentUpon>FrmCareerAsk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCareerCounseling.resx">
+      <DependentUpon>FrmCareerCounseling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCareerCounselingRoom.resx">
+      <DependentUpon>FrmCareerCounselingRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCareerResult.resx">
+      <DependentUpon>FrmCareerResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmComments.resx">
+      <DependentUpon>FrmComments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExamination1.resx">
+      <DependentUpon>FrmExamination1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSplash.resx">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStudentDetails.resx">
+      <DependentUpon>FrmStudentDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserType.resx">
+      <DependentUpon>FrmUserType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmViewAllStudents.resx">
+      <DependentUpon>FrmViewAllStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmViewAllUsers.resx">
+      <DependentUpon>FrmViewAllUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmViewParentsComments.resx">
+      <DependentUpon>FrmViewParentsComments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmViewUserLog.resx">
+      <DependentUpon>FrmViewUserLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDICareer.resx">
+      <DependentUpon>MDICareer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="CareerDbDataSet1.xsc">
+      <DependentUpon>CareerDbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CareerDbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CareerDbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CareerDbDataSet1.xss">
+      <DependentUpon>CareerDbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CareerDbDataSet11.xsc">
+      <DependentUpon>CareerDbDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="CareerDbDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CareerDbDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CareerDbDataSet11.xss">
+      <DependentUpon>CareerDbDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="background1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CareerDb.accdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="slider4.JPG" />
+    <None Include="slider3.JPG" />
+    <None Include="slider2.JPG" />
+    <None Include="slider1.JPG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

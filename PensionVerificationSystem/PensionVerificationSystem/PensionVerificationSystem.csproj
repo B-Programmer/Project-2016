@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8E2C323D-91C8-49EE-8468-5F987B6AE7AA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PensionVerificationSystem</RootNamespace>
+    <AssemblyName>PensionVerificationSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutPensionVerification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutPensionVerification.Designer.cs">
+      <DependentUpon>AboutPensionVerification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReportMonthlyVerification.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportMonthlyVerification.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportPensionEnrolment.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportPensionEnrolment.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportPensionPayment.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportPensionPayment.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dbPensionDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbPensionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChangePassword.Designer.cs">
+      <DependentUpon>FrmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCreateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCreateUser.Designer.cs">
+      <DependentUpon>FrmCreateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGeneralPensionEnrolReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGeneralPensionEnrolReport.Designer.cs">
+      <DependentUpon>FrmGeneralPensionEnrolReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMonthlyVerification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMonthlyVerification.Designer.cs">
+      <DependentUpon>FrmMonthlyVerification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMonthlyVerificationReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMonthlyVerificationReport.Designer.cs">
+      <DependentUpon>FrmMonthlyVerificationReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPensionEnrollment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPensionEnrollment.Designer.cs">
+      <DependentUpon>FrmPensionEnrollment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPensionerVerification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPensionerVerification.Designer.cs">
+      <DependentUpon>FrmPensionerVerification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPensionMonthlyVerification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPensionMonthlyVerification.Designer.cs">
+      <DependentUpon>FrmPensionMonthlyVerification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPensionPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPensionPayment.Designer.cs">
+      <DependentUpon>FrmPensionPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPensionPaymentReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPensionPaymentReport.Designer.cs">
+      <DependentUpon>FrmPensionPaymentReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSplash.designer.cs">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserLogin.Designer.cs">
+      <DependentUpon>FrmUserLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIPensionVerification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIPensionVerification.Designer.cs">
+      <DependentUpon>MDIPensionVerification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PensionReportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PensionReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutPensionVerification.resx">
+      <DependentUpon>AboutPensionVerification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportMonthlyVerification.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportMonthlyVerification.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportPensionEnrolment.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportPensionEnrolment.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportPensionPayment.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportPensionPayment.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChangePassword.resx">
+      <DependentUpon>FrmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCreateUser.resx">
+      <DependentUpon>FrmCreateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGeneralPensionEnrolReport.resx">
+      <DependentUpon>FrmGeneralPensionEnrolReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMonthlyVerification.resx">
+      <DependentUpon>FrmMonthlyVerification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMonthlyVerificationReport.resx">
+      <DependentUpon>FrmMonthlyVerificationReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPensionEnrollment.resx">
+      <DependentUpon>FrmPensionEnrollment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPensionerVerification.resx">
+      <DependentUpon>FrmPensionerVerification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPensionMonthlyVerification.resx">
+      <DependentUpon>FrmPensionMonthlyVerification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPensionPayment.resx">
+      <DependentUpon>FrmPensionPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPensionPaymentReport.resx">
+      <DependentUpon>FrmPensionPaymentReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSplash.resx">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserLogin.resx">
+      <DependentUpon>FrmUserLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIPensionVerification.resx">
+      <DependentUpon>MDIPensionVerification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="dbPensionDataSet.xsc">
+      <DependentUpon>dbPensionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbPensionDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbPensionDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbPensionDataSet.xss">
+      <DependentUpon>dbPensionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PensionReportDataSet.xsc">
+      <DependentUpon>PensionReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PensionReportDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PensionReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PensionReportDataSet.xss">
+      <DependentUpon>PensionReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Netpay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Cancel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Refresh.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\background1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\key1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dbPension.accdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

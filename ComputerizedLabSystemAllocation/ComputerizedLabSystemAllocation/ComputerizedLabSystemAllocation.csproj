@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{57F714EB-32FE-4435-B6E5-D80480168085}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ComputerizedLabSystemAllocation</RootNamespace>
+    <AssemblyName>ComputerizedLabSystemAllocation</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutSysLabApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutSysLabApp.Designer.cs">
+      <DependentUpon>AboutSysLabApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbStaffRegDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbStaffRegDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbStudentRegDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbStudentRegDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbStudentRegReportDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbStudentRegReportDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbSystemLabDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbSystemLabDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDepartmentalAllocationRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDepartmentalAllocationRpt.Designer.cs">
+      <DependentUpon>FrmDepartmentalAllocationRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditStaffReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditStaffReg.Designer.cs">
+      <DependentUpon>FrmEditStaffReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditStudentReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditStudentReg.Designer.cs">
+      <DependentUpon>FrmEditStudentReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIndividualAllocationReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIndividualAllocationReport.Designer.cs">
+      <DependentUpon>FrmIndividualAllocationReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSchoolAllocationReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSchoolAllocationReport.Designer.cs">
+      <DependentUpon>FrmSchoolAllocationReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStaffRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStaffRegistration.Designer.cs">
+      <DependentUpon>FrmStaffRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStaffReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStaffReport.Designer.cs">
+      <DependentUpon>FrmStaffReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStudentRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStudentRegistration.Designer.cs">
+      <DependentUpon>FrmStudentRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStudentReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStudentReports.Designer.cs">
+      <DependentUpon>FrmStudentReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSystemAllocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSystemAllocation.Designer.cs">
+      <DependentUpon>FrmSystemAllocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSystemAllocationReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSystemAllocationReport.Designer.cs">
+      <DependentUpon>FrmSystemAllocationReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDISystemAllocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDISystemAllocation.Designer.cs">
+      <DependentUpon>MDISystemAllocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutSysLabApp.resx">
+      <DependentUpon>AboutSysLabApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDepartmentalAllocationRpt.resx">
+      <DependentUpon>FrmDepartmentalAllocationRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditStaffReg.resx">
+      <DependentUpon>FrmEditStaffReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditStudentReg.resx">
+      <DependentUpon>FrmEditStudentReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIndividualAllocationReport.resx">
+      <DependentUpon>FrmIndividualAllocationReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSchoolAllocationReport.resx">
+      <DependentUpon>FrmSchoolAllocationReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStaffRegistration.resx">
+      <DependentUpon>FrmStaffRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStaffReport.resx">
+      <DependentUpon>FrmStaffReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStudentRegistration.resx">
+      <DependentUpon>FrmStudentRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStudentReports.resx">
+      <DependentUpon>FrmStudentReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSystemAllocation.resx">
+      <DependentUpon>FrmSystemAllocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSystemAllocationReport.resx">
+      <DependentUpon>FrmSystemAllocationReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDISystemAllocation.resx">
+      <DependentUpon>MDISystemAllocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="dbStaffRegDataSet.xsc">
+      <DependentUpon>dbStaffRegDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbStaffRegDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbStaffRegDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbStaffRegDataSet.xss">
+      <DependentUpon>dbStaffRegDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbStudentRegDataSet.xsc">
+      <DependentUpon>dbStudentRegDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbStudentRegDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbStudentRegDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbStudentRegDataSet.xss">
+      <DependentUpon>dbStudentRegDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbStudentRegReportDataSet1.xsc">
+      <DependentUpon>dbStudentRegReportDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="dbStudentRegReportDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbStudentRegReportDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbStudentRegReportDataSet1.xss">
+      <DependentUpon>dbStudentRegReportDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="dbSystemLabDataSet.xsc">
+      <DependentUpon>dbSystemLabDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbSystemLabDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbSystemLabDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbSystemLabDataSet.xss">
+      <DependentUpon>dbSystemLabDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dbSystemLab.accdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Images\background1.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

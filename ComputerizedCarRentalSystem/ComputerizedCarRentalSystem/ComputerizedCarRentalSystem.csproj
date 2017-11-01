@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4ACE9B55-936B-4C36-94CC-E78E31877873}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ComputerizedCarRentalSystem</RootNamespace>
+    <AssemblyName>ComputerizedCarRentalSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutCarRentalApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutCarRentalApp.Designer.cs">
+      <DependentUpon>AboutCarRentalApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarRentalReportDataSet.cs">
+      <DependentUpon>CarRentalReportDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CarRentalReportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CarRentalReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReportAllCars.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportAllCars.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportAllCustomers.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportAllCustomers.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportAllRentedCars.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportAllRentedCars.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportAllReturnedCars.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportAllReturnedCars.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DbCarRentalDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbCarRentalDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAllCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAllCustomers.Designer.cs">
+      <DependentUpon>FrmAllCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAllRegisteredCars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAllRegisteredCars.Designer.cs">
+      <DependentUpon>FrmAllRegisteredCars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAllRentedCars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAllRentedCars.Designer.cs">
+      <DependentUpon>FrmAllRentedCars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAllReturnedCars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAllReturnedCars.Designer.cs">
+      <DependentUpon>FrmAllReturnedCars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCarBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCarBooking.Designer.cs">
+      <DependentUpon>FrmCarBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCarRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCarRegistration.Designer.cs">
+      <DependentUpon>FrmCarRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCarReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCarReturn.Designer.cs">
+      <DependentUpon>FrmCarReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChangeAdminPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChangeAdminPassword.Designer.cs">
+      <DependentUpon>FrmChangeAdminPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChangeCustomerPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChangeCustomerPassword.Designer.cs">
+      <DependentUpon>FrmChangeCustomerPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCreateAdminUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCreateAdminUser.Designer.cs">
+      <DependentUpon>FrmCreateAdminUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCustomerRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCustomerRegistration.Designer.cs">
+      <DependentUpon>FrmCustomerRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditCarRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditCarRegistration.Designer.cs">
+      <DependentUpon>FrmEditCarRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHomePage.Designer.cs">
+      <DependentUpon>FrmHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSplash.Designer.cs">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDICarRental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDICarRental.Designer.cs">
+      <DependentUpon>MDICarRental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutCarRentalApp.resx">
+      <DependentUpon>AboutCarRentalApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportAllCars.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportAllCars.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportAllCustomers.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportAllCustomers.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportAllRentedCars.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportAllRentedCars.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportAllReturnedCars.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportAllReturnedCars.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAllCustomers.resx">
+      <DependentUpon>FrmAllCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAllRegisteredCars.resx">
+      <DependentUpon>FrmAllRegisteredCars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAllRentedCars.resx">
+      <DependentUpon>FrmAllRentedCars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAllReturnedCars.resx">
+      <DependentUpon>FrmAllReturnedCars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCarBooking.resx">
+      <DependentUpon>FrmCarBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCarRegistration.resx">
+      <DependentUpon>FrmCarRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCarReturn.resx">
+      <DependentUpon>FrmCarReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChangeAdminPassword.resx">
+      <DependentUpon>FrmChangeAdminPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChangeCustomerPassword.resx">
+      <DependentUpon>FrmChangeCustomerPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCreateAdminUser.resx">
+      <DependentUpon>FrmCreateAdminUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCustomerRegistration.resx">
+      <DependentUpon>FrmCustomerRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditCarRegistration.resx">
+      <DependentUpon>FrmEditCarRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHomePage.resx">
+      <DependentUpon>FrmHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSplash.resx">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDICarRental.resx">
+      <DependentUpon>MDICarRental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="CarRentalReportDataSet.xsc">
+      <DependentUpon>CarRentalReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CarRentalReportDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CarRentalReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CarRentalReportDataSet.xss">
+      <DependentUpon>CarRentalReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DbCarRentalDataSet.xsc">
+      <DependentUpon>DbCarRentalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DbCarRentalDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DbCarRentalDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DbCarRentalDataSet.xss">
+      <DependentUpon>DbCarRentalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Cancel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DbCarRental.accdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Images\key1.gif" />
+    <None Include="Images\15-revert-fhd-2000x1125-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

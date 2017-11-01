@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Coorperative" targetNamespace="http://tempuri.org/Coorperative.xsd" xmlns:mstns="http://tempuri.org/Coorperative.xsd" xmlns="http://tempuri.org/Coorperative.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Coorperative" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Coorperative" msprop:Generator_UserDSName="Coorperative">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Data_x0020_Table1" msprop:Generator_TableClassName="Data_Table1DataTable" msprop:Generator_TableVarName="tableData_Table1" msprop:Generator_RowChangedName="Data_Table1RowChanged" msprop:Generator_TablePropName="Data_Table1" msprop:Generator_RowDeletingName="Data_Table1RowDeleting" msprop:Generator_RowChangingName="Data_Table1RowChanging" msprop:Generator_RowEvHandlerName="Data_Table1RowChangeEventHandler" msprop:Generator_RowDeletedName="Data_Table1RowDeleted" msprop:Generator_RowClassName="Data_Table1Row" msprop:Generator_UserTableName="Data Table1" msprop:Generator_RowEvArgName="Data_Table1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Reg_Date" msprop:Generator_ColumnVarNameInTable="columnReg_Date" msprop:Generator_ColumnPropNameInRow="Reg_Date" msprop:Generator_ColumnPropNameInTable="Reg_DateColumn" msprop:Generator_UserColumnName="Reg_Date" type="xs:string" minOccurs="0" />
+              <xs:element name="Staff_ID" msprop:Generator_ColumnVarNameInTable="columnStaff_ID" msprop:Generator_ColumnPropNameInRow="Staff_ID" msprop:Generator_ColumnPropNameInTable="Staff_IDColumn" msprop:Generator_UserColumnName="Staff_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="FullName" msprop:Generator_ColumnVarNameInTable="columnFullName" msprop:Generator_ColumnPropNameInRow="FullName" msprop:Generator_ColumnPropNameInTable="FullNameColumn" msprop:Generator_UserColumnName="FullName" type="xs:string" minOccurs="0" />
+              <xs:element name="Phone_Number" msprop:Generator_ColumnVarNameInTable="columnPhone_Number" msprop:Generator_ColumnPropNameInRow="Phone_Number" msprop:Generator_ColumnPropNameInTable="Phone_NumberColumn" msprop:Generator_UserColumnName="Phone_Number" type="xs:string" minOccurs="0" />
+              <xs:element name="Department" msprop:Generator_ColumnVarNameInTable="columnDepartment" msprop:Generator_ColumnPropNameInRow="Department" msprop:Generator_ColumnPropNameInTable="DepartmentColumn" msprop:Generator_UserColumnName="Department" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

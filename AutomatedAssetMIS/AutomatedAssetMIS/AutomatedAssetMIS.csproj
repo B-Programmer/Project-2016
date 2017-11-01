@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1B4BC475-6EA0-403D-BD29-C5D9235514B4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutomatedAssetMIS</RootNamespace>
+    <AssemblyName>AutomatedAssetMIS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutAssetApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutAssetApp.Designer.cs">
+      <DependentUpon>AboutAssetApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssetReportDataSet.cs">
+      <DependentUpon>AssetReportDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AssetReportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssetReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReportAnnualBudget.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportAnnualBudget.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportBuilding.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportBuilding.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportFurniture.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportFurniture.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportLand.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportLand.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportMonthlyReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportMonthlyReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportVehicle.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportVehicle.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dbAssetDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbAssetDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnnualBudgetReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnnualBudgetReport.Designer.cs">
+      <DependentUpon>FrmAnnualBudgetReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAssetSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAssetSales.Designer.cs">
+      <DependentUpon>FrmAssetSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGeneralAssetAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGeneralAssetAnalysis.Designer.cs">
+      <DependentUpon>FrmGeneralAssetAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMonthlyBudgetReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMonthlyBudgetReport.Designer.cs">
+      <DependentUpon>FrmMonthlyBudgetReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalesAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalesAnalysis.Designer.cs">
+      <DependentUpon>FrmSalesAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSplash.Designer.cs">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserLogin.Designer.cs">
+      <DependentUpon>FrmUserLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVehicleAssetReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVehicleAssetReport.Designer.cs">
+      <DependentUpon>FrmVehicleAssetReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAsset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAsset.Designer.cs">
+      <DependentUpon>FrmAsset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAssetBudget.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAssetBudget.Designer.cs">
+      <DependentUpon>FrmAssetBudget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuildingAssetReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuildingAssetReport.Designer.cs">
+      <DependentUpon>FrmBuildingAssetReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFurnitureAssetReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFurnitureAssetReport.Designer.cs">
+      <DependentUpon>FrmFurnitureAssetReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLandAssetReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLandAssetReport.Designer.cs">
+      <DependentUpon>FrmLandAssetReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIAsset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIAsset.Designer.cs">
+      <DependentUpon>MDIAsset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutAssetApp.resx">
+      <DependentUpon>AboutAssetApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportAnnualBudget.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportAnnualBudget.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportBuilding.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportBuilding.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportFurniture.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportFurniture.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportLand.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportLand.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportMonthlyReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportMonthlyReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportVehicle.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportVehicle.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnnualBudgetReport.resx">
+      <DependentUpon>FrmAnnualBudgetReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAssetSales.resx">
+      <DependentUpon>FrmAssetSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGeneralAssetAnalysis.resx">
+      <DependentUpon>FrmGeneralAssetAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMonthlyBudgetReport.resx">
+      <DependentUpon>FrmMonthlyBudgetReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalesAnalysis.resx">
+      <DependentUpon>FrmSalesAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSplash.resx">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserLogin.resx">
+      <DependentUpon>FrmUserLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVehicleAssetReport.resx">
+      <DependentUpon>FrmVehicleAssetReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAsset.resx">
+      <DependentUpon>FrmAsset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAssetBudget.resx">
+      <DependentUpon>FrmAssetBudget.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuildingAssetReport.resx">
+      <DependentUpon>FrmBuildingAssetReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFurnitureAssetReport.resx">
+      <DependentUpon>FrmFurnitureAssetReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLandAssetReport.resx">
+      <DependentUpon>FrmLandAssetReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIAsset.resx">
+      <DependentUpon>MDIAsset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="AssetReportDataSet.xsc">
+      <DependentUpon>AssetReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AssetReportDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AssetReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AssetReportDataSet.xss">
+      <DependentUpon>AssetReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbAssetDataSet.xsc">
+      <DependentUpon>dbAssetDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbAssetDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbAssetDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbAssetDataSet.xss">
+      <DependentUpon>dbAssetDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="background-photo-199006-s-1280x782.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Blue-radial-gradient-background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hOME.JPG" />
+    <None Include="Cloud_Background first.png" />
+    <Content Include="dbAsset.accdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

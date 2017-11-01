@@ -1,0 +1,35 @@
+administrator panel login details
+
+username = administrator
+password = administrator
+
+
+database .SQL file
+/administrator/app/database/drugverification.sql
+
+DATABASE NAME: drugverification
+
+database username: root
+database password: vertrigo
+
+to change edit these file
+
+~ for admin
+/administrator/app/database/connection.php
+
+~for user
+/app/database.connection.php
+
+
+TO EDIT THE ABOUT CONTENT
+
+goto /app/views/index.html
+
+From here you have access to enter the owner of the application here.
+
+
+
+THANKS
+
+MESH MANUEL
+meshmmanuel@yahoo.com

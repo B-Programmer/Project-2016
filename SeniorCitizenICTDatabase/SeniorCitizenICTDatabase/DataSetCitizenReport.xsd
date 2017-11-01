@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetCitizenReport" targetNamespace="http://tempuri.org/DataSetCitizenReport.xsd" xmlns:mstns="http://tempuri.org/DataSetCitizenReport.xsd" xmlns="http://tempuri.org/DataSetCitizenReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetCitizenReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetCitizenReport" msprop:Generator_UserDSName="DataSetCitizenReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GeneralReport" msprop:Generator_TableClassName="GeneralReportDataTable" msprop:Generator_TableVarName="tableGeneralReport" msprop:Generator_RowChangedName="GeneralReportRowChanged" msprop:Generator_TablePropName="GeneralReport" msprop:Generator_RowDeletingName="GeneralReportRowDeleting" msprop:Generator_RowChangingName="GeneralReportRowChanging" msprop:Generator_RowEvHandlerName="GeneralReportRowChangeEventHandler" msprop:Generator_RowDeletedName="GeneralReportRowDeleted" msprop:Generator_RowClassName="GeneralReportRow" msprop:Generator_UserTableName="GeneralReport" msprop:Generator_RowEvArgName="GeneralReportRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UniqueCitizenId" msprop:Generator_ColumnVarNameInTable="columnUniqueCitizenId" msprop:Generator_ColumnPropNameInRow="UniqueCitizenId" msprop:Generator_ColumnPropNameInTable="UniqueCitizenIdColumn" msprop:Generator_UserColumnName="UniqueCitizenId" type="xs:string" minOccurs="0" />
+              <xs:element name="CitizenFullname" msprop:Generator_ColumnVarNameInTable="columnCitizenFullname" msprop:Generator_ColumnPropNameInRow="CitizenFullname" msprop:Generator_ColumnPropNameInTable="CitizenFullnameColumn" msprop:Generator_UserColumnName="CitizenFullname" type="xs:string" minOccurs="0" />
+              <xs:element name="Gender" msprop:Generator_ColumnVarNameInTable="columnGender" msprop:Generator_ColumnPropNameInRow="Gender" msprop:Generator_ColumnPropNameInTable="GenderColumn" msprop:Generator_UserColumnName="Gender" type="xs:string" minOccurs="0" />
+              <xs:element name="DateOfBirth" msprop:Generator_ColumnVarNameInTable="columnDateOfBirth" msprop:Generator_ColumnPropNameInRow="DateOfBirth" msprop:Generator_ColumnPropNameInTable="DateOfBirthColumn" msprop:Generator_UserColumnName="DateOfBirth" type="xs:string" minOccurs="0" />
+              <xs:element name="PhoneNumber" msprop:Generator_ColumnVarNameInTable="columnPhoneNumber" msprop:Generator_ColumnPropNameInRow="PhoneNumber" msprop:Generator_ColumnPropNameInTable="PhoneNumberColumn" msprop:Generator_UserColumnName="PhoneNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="StateOfOrigin" msprop:Generator_ColumnVarNameInTable="columnStateOfOrigin" msprop:Generator_ColumnPropNameInRow="StateOfOrigin" msprop:Generator_ColumnPropNameInTable="StateOfOriginColumn" msprop:Generator_UserColumnName="StateOfOrigin" type="xs:string" minOccurs="0" />
+              <xs:element name="LGAOfOrigin" msprop:Generator_ColumnVarNameInTable="columnLGAOfOrigin" msprop:Generator_ColumnPropNameInRow="LGAOfOrigin" msprop:Generator_ColumnPropNameInTable="LGAOfOriginColumn" msprop:Generator_UserColumnName="LGAOfOrigin" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GovernmentWorkerRpt" msprop:Generator_TableClassName="GovernmentWorkerRptDataTable" msprop:Generator_TableVarName="tableGovernmentWorkerRpt" msprop:Generator_TablePropName="GovernmentWorkerRpt" msprop:Generator_RowDeletingName="GovernmentWorkerRptRowDeleting" msprop:Generator_RowChangingName="GovernmentWorkerRptRowChanging" msprop:Generator_RowEvHandlerName="GovernmentWorkerRptRowChangeEventHandler" msprop:Generator_RowDeletedName="GovernmentWorkerRptRowDeleted" msprop:Generator_UserTableName="GovernmentWorkerRpt" msprop:Generator_RowChangedName="GovernmentWorkerRptRowChanged" msprop:Generator_RowEvArgName="GovernmentWorkerRptRowChangeEvent" msprop:Generator_RowClassName="GovernmentWorkerRptRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UniqueCitizenId" msprop:Generator_ColumnVarNameInTable="columnUniqueCitizenId" msprop:Generator_ColumnPropNameInRow="UniqueCitizenId" msprop:Generator_ColumnPropNameInTable="UniqueCitizenIdColumn" msprop:Generator_UserColumnName="UniqueCitizenId" type="xs:string" minOccurs="0" />
+              <xs:element name="CitizenFullname" msprop:Generator_ColumnVarNameInTable="columnCitizenFullname" msprop:Generator_ColumnPropNameInRow="CitizenFullname" msprop:Generator_ColumnPropNameInTable="CitizenFullnameColumn" msprop:Generator_UserColumnName="CitizenFullname" type="xs:string" minOccurs="0" />
+              <xs:element name="OccupationType" msprop:Generator_ColumnVarNameInTable="columnOccupationType" msprop:Generator_ColumnPropNameInRow="OccupationType" msprop:Generator_ColumnPropNameInTable="OccupationTypeColumn" msprop:Generator_UserColumnName="OccupationType" type="xs:string" minOccurs="0" />
+              <xs:element name="GovOrganizationName" msprop:Generator_ColumnVarNameInTable="columnGovOrganizationName" msprop:Generator_ColumnPropNameInRow="GovOrganizationName" msprop:Generator_ColumnPropNameInTable="GovOrganizationNameColumn" msprop:Generator_UserColumnName="GovOrganizationName" type="xs:string" minOccurs="0" />
+              <xs:element name="GovMinistry" msprop:Generator_ColumnVarNameInTable="columnGovMinistry" msprop:Generator_ColumnPropNameInRow="GovMinistry" msprop:Generator_ColumnPropNameInTable="GovMinistryColumn" msprop:Generator_UserColumnName="GovMinistry" type="xs:string" minOccurs="0" />
+              <xs:element name="GovLGA" msprop:Generator_ColumnVarNameInTable="columnGovLGA" msprop:Generator_ColumnPropNameInRow="GovLGA" msprop:Generator_ColumnPropNameInTable="GovLGAColumn" msprop:Generator_UserColumnName="GovLGA" type="xs:string" minOccurs="0" />
+              <xs:element name="GovOccupation" msprop:Generator_ColumnVarNameInTable="columnGovOccupation" msprop:Generator_ColumnPropNameInRow="GovOccupation" msprop:Generator_ColumnPropNameInTable="GovOccupationColumn" msprop:Generator_UserColumnName="GovOccupation" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="NonGovernmentWorkerRpt" msprop:Generator_TableClassName="NonGovernmentWorkerRptDataTable" msprop:Generator_TableVarName="tableNonGovernmentWorkerRpt" msprop:Generator_TablePropName="NonGovernmentWorkerRpt" msprop:Generator_RowDeletingName="NonGovernmentWorkerRptRowDeleting" msprop:Generator_RowChangingName="NonGovernmentWorkerRptRowChanging" msprop:Generator_RowEvHandlerName="NonGovernmentWorkerRptRowChangeEventHandler" msprop:Generator_RowDeletedName="NonGovernmentWorkerRptRowDeleted" msprop:Generator_UserTableName="NonGovernmentWorkerRpt" msprop:Generator_RowChangedName="NonGovernmentWorkerRptRowChanged" msprop:Generator_RowEvArgName="NonGovernmentWorkerRptRowChangeEvent" msprop:Generator_RowClassName="NonGovernmentWorkerRptRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UniqueCitizenId" msprop:Generator_ColumnVarNameInTable="columnUniqueCitizenId" msprop:Generator_ColumnPropNameInRow="UniqueCitizenId" msprop:Generator_ColumnPropNameInTable="UniqueCitizenIdColumn" msprop:Generator_UserColumnName="UniqueCitizenId" type="xs:string" minOccurs="0" />
+              <xs:element name="CitizenFullname" msprop:Generator_ColumnVarNameInTable="columnCitizenFullname" msprop:Generator_ColumnPropNameInRow="CitizenFullname" msprop:Generator_ColumnPropNameInTable="CitizenFullnameColumn" msprop:Generator_UserColumnName="CitizenFullname" type="xs:string" minOccurs="0" />
+              <xs:element name="OccupationType" msprop:Generator_ColumnVarNameInTable="columnOccupationType" msprop:Generator_ColumnPropNameInRow="OccupationType" msprop:Generator_ColumnPropNameInTable="OccupationTypeColumn" msprop:Generator_UserColumnName="OccupationType" type="xs:string" minOccurs="0" />
+              <xs:element name="NonGovOrganizationName" msprop:Generator_ColumnVarNameInTable="columnNonGovOrganizationName" msprop:Generator_ColumnPropNameInRow="NonGovOrganizationName" msprop:Generator_ColumnPropNameInTable="NonGovOrganizationNameColumn" msprop:Generator_UserColumnName="NonGovOrganizationName" type="xs:string" minOccurs="0" />
+              <xs:element name="NonGovOrganizationAddress" msprop:Generator_ColumnVarNameInTable="columnNonGovOrganizationAddress" msprop:Generator_ColumnPropNameInRow="NonGovOrganizationAddress" msprop:Generator_ColumnPropNameInTable="NonGovOrganizationAddressColumn" msprop:Generator_UserColumnName="NonGovOrganizationAddress" type="xs:string" minOccurs="0" />
+              <xs:element name="NonGovLGA" msprop:Generator_ColumnVarNameInTable="columnNonGovLGA" msprop:Generator_ColumnPropNameInRow="NonGovLGA" msprop:Generator_ColumnPropNameInTable="NonGovLGAColumn" msprop:Generator_UserColumnName="NonGovLGA" type="xs:string" minOccurs="0" />
+              <xs:element name="NonGovOccupation" msprop:Generator_ColumnVarNameInTable="columnNonGovOccupation" msprop:Generator_ColumnPropNameInRow="NonGovOccupation" msprop:Generator_ColumnPropNameInTable="NonGovOccupationColumn" msprop:Generator_UserColumnName="NonGovOccupation" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

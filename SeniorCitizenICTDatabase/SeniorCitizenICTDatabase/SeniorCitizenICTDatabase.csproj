@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B77DCF4B-17A8-4186-8F2D-13C5B6E7E5AE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SeniorCitizenICTDatabase</RootNamespace>
+    <AssemblyName>SeniorCitizenICTDatabase</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutSeniorCitizen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutSeniorCitizen.Designer.cs">
+      <DependentUpon>AboutSeniorCitizen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReportGeneral.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportGeneral.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportGovernmentWorker.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportGovernmentWorker.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportNonGovernmentWorkers.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportNonGovernmentWorkers.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSetCitizenReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetCitizenReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbCitizenDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbCitizenDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChangePassword.Designer.cs">
+      <DependentUpon>FrmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCreateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCreateUser.Designer.cs">
+      <DependentUpon>FrmCreateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGeneralReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGeneralReport.Designer.cs">
+      <DependentUpon>FrmGeneralReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGovernmentWorkersReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGovernmentWorkersReport.Designer.cs">
+      <DependentUpon>FrmGovernmentWorkersReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNonGovernmentWorkersRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNonGovernmentWorkersRpt.Designer.cs">
+      <DependentUpon>FrmNonGovernmentWorkersRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSearchCitizen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSearchCitizen.Designer.cs">
+      <DependentUpon>FrmSearchCitizen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSearchCitizenResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSearchCitizenResult.Designer.cs">
+      <DependentUpon>FrmSearchCitizenResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSeniorCitizenRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSeniorCitizenRegistration.Designer.cs">
+      <DependentUpon>FrmSeniorCitizenRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSplash.Designer.cs">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDISeniorCitizen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDISeniorCitizen.Designer.cs">
+      <DependentUpon>MDISeniorCitizen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutSeniorCitizen.resx">
+      <DependentUpon>AboutSeniorCitizen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportGeneral.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportGeneral.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportGovernmentWorker.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportGovernmentWorker.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportNonGovernmentWorkers.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportNonGovernmentWorkers.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChangePassword.resx">
+      <DependentUpon>FrmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCreateUser.resx">
+      <DependentUpon>FrmCreateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGeneralReport.resx">
+      <DependentUpon>FrmGeneralReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGovernmentWorkersReport.resx">
+      <DependentUpon>FrmGovernmentWorkersReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNonGovernmentWorkersRpt.resx">
+      <DependentUpon>FrmNonGovernmentWorkersRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSearchCitizen.resx">
+      <DependentUpon>FrmSearchCitizen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSearchCitizenResult.resx">
+      <DependentUpon>FrmSearchCitizenResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSeniorCitizenRegistration.resx">
+      <DependentUpon>FrmSeniorCitizenRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSplash.resx">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDISeniorCitizen.resx">
+      <DependentUpon>MDISeniorCitizen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="DataSetCitizenReport.xsc">
+      <DependentUpon>DataSetCitizenReport.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetCitizenReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetCitizenReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetCitizenReport.xss">
+      <DependentUpon>DataSetCitizenReport.xsd</DependentUpon>
+    </None>
+    <None Include="dbCitizenDataSet.xsc">
+      <DependentUpon>dbCitizenDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbCitizenDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbCitizenDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbCitizenDataSet.xss">
+      <DependentUpon>dbCitizenDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Layer_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Cancel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Refresh.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Netpay.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\key1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dbCitizen.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
